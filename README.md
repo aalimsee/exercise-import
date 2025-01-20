@@ -1,6 +1,50 @@
 # exercise-import
 
-# =================
+# Common AWS Resources
+Compute
+    aws_instance – EC2 instances
+    aws_launch_template – Launch templates for EC2 instances
+    aws_autoscaling_group – Autoscaling groups
+Networking
+    aws_vpc – Virtual Private Clouds
+    aws_subnet – Subnets
+    aws_internet_gateway – Internet gateways
+    aws_route_table – Route tables
+    aws_security_group – Security groups
+    aws_network_acl – Network ACLs
+Storage
+    aws_s3_bucket – S3 buckets
+    aws_ebs_volume – Elastic Block Store (EBS) volumes
+    aws_efs_file_system – Elastic File System (EFS)
+Identity and Access Management
+    aws_iam_role – IAM roles
+    aws_iam_policy – IAM policies
+    aws_iam_user – IAM users
+    aws_iam_group – IAM groups
+    Database
+    aws_rds_instance – RDS database instances
+    aws_dynamodb_table – DynamoDB tables
+    aws_elasticache_cluster – ElastiCache clusters
+Load Balancing
+    aws_lb – Application/Network Load Balancers
+    aws_lb_target_group – Load balancer target groups
+    aws_lb_listener – Load balancer listeners
+Containers
+    aws_ecs_cluster – ECS clusters
+    aws_ecs_service – ECS services
+    aws_ecs_task_definition – ECS task definitions
+    aws_eks_cluster – EKS clusters
+Serverless
+    aws_lambda_function – Lambda functions
+    aws_apigatewayv2_api – API Gateway (v2)
+Monitoring and Logging
+    aws_cloudwatch_log_group – CloudWatch log groups
+    aws_cloudwatch_metric_alarm – CloudWatch alarms
+DNS
+    aws_route53_zone – Route 53 hosted zones
+    aws_route53_record – Route 53 DNS records
+
+# Example
 aaronlim@MacBookAir exercise-import % terraform init
 aaronlim@MacBookAir exercise-import % terraform import aws_instance.example i-0217402d6ff1d553e  
 aaronlim@MacBookAir exercise-import % terraform show 
